@@ -1,0 +1,12 @@
+{
+	"hosting": {
+		"public": "public",
+		"redirects": [
+			{
+				"source": "/",
+				"destination": "/HTTPImport.mjs",
+				"type": 307
+			}
+		]
+	}
+}

@@ -38,7 +38,7 @@ export const resolve = async (specifier, parentModule, defaultResolver) => {
 			request.end();
 		});
 		return {
-			url: `data:application/javascript,${file}`,
+			url: `data:application/javascript;base64,${file.toString('base64')}`,
 			format: 'module'
 		}
 	} else {
